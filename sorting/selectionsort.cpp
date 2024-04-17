@@ -8,6 +8,7 @@ void func(vector<int>arr, int n){
         for(int j=1;j<n;j++){
             if(arr[j]<arr[i])
             mini=arr[j];
+           
         }
     }
 }
