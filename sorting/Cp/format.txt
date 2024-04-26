@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+typedef long long ll;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    ll t; // Define t as ll
+    cin >> t;
+    while (t--) {
+        ll n; // Define n as ll
+        cin >> n;
+        vector<ll> v(n);
+        for (ll i = 0; i < n; i++) { // Use ll instead of int for the loop variable
+            cin >> v[i];
+        }
+    }
+
+    return 0;
+}
