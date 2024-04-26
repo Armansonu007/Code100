@@ -1,5 +1,8 @@
+//ques: https://codeforces.com/problemset/problem/1487/A
+
 #include <iostream>
 #include <vector>
+#include <limits> 
 using namespace std;
 
 typedef long long ll;
@@ -9,22 +12,22 @@ int main() {
     cin.tie(nullptr);
     cout.tie(nullptr);
 
-    ll t; 
+    ll t;
     cin >> t;
     while (t--) {
-        ll n; 
+        ll n;
         cin >> n;
         vector<ll> v(n);
-        int min_val = INT_MAX; // Changed variable name to avoid conflict with 'std::min'
-        for (ll i = 0; i < n; i++) { 
+        ll min_val=1e15;
+        for (ll i = 0; i < n; i++) {
             cin >> v[i];
-            min_val = min(min_val, v[i]); // Used min_val instead of min
+            min_val = min(min_val, v[i]); 
         }
-        ll xt = 0; // Initialized xt to 0
+        ll xt = 0;
         for (auto i : v) {
             if (i == min_val) xt++;
         }
-        cout << n - xt;
+        cout << n - xt << endl;
     }
 
     return 0;
