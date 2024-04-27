@@ -20,7 +20,7 @@ vector<vector<int>> func(vector<int> arr, int n, int target){
 int main(){
     vector<int> arr{7, 5, 6, 9, 2};
     int n = arr.size();
-    vector<vector<int>> results = func(arr, n, 11);
+    vector<vector<int>> results = func(arr, n, 0 );
     
     if (!results.empty()) {
         cout << "Pairs of indices that sum up to 11:" << endl;
